@@ -7,8 +7,7 @@ CREATE COMPUTE MODULE MQPutMessageFlow_Compute
 		-- CALL CopyEntireMessage();
 		
 		SET OutputRoot.BLOB.BLOB = CAST('Hello World' AS BLOB CCSID InputRoot.Properties.CodedCharSetId ENCODING InputRoot.Properties.Encoding);
-		
-		
+			
 		
 		RETURN TRUE;
 	END;
