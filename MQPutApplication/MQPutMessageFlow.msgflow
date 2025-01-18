@@ -9,7 +9,7 @@
       <nodes xmi:type="ComIbmTimeoutNotification.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="239,222" uniqueIdentifier="test-1">
         <translation xmi:type="utility:ConstantString" string="Timeout Notification"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="746,222" queueName="Q5">
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="746,222" queueName="Q5" destinationQueueManagerName="QMBRK" policyUrl="{MQPutPolicy}:mqpolicy">
         <translation xmi:type="utility:ConstantString" string="MQ Output"/>
       </nodes>
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="511,221" computeExpression="esql://routine/#MQPutMessageFlow_Compute.Main">

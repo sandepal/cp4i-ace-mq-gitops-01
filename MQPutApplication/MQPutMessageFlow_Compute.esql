@@ -6,6 +6,8 @@ CREATE COMPUTE MODULE MQPutMessageFlow_Compute
 		-- CALL CopyMessageHeaders();
 		-- CALL CopyEntireMessage();
 		
+		-- setting 5 minute expiry
+		SET OutputRoot.MQMD.Expiry = 3000;
 		SET OutputRoot.BLOB.BLOB = CAST('Hello World' AS BLOB CCSID InputRoot.Properties.CodedCharSetId ENCODING InputRoot.Properties.Encoding);
 					
 		RETURN TRUE;
